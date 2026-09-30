@@ -1,17 +1,6 @@
 ![MATRIX typing banner](assets/typing-banner.svg)
 
-```text
-╔════════════════════════════════════════╗
-║  ░ MATRIX://wajuejinajia · online ░    ║
-║  > whoami                              ║
-║  Liam                                  ║
-╚════════════════════════════════════════╝
-```
 
-> `█` Agent Skills · 开发者工具 · macOS · TypeScript  
-> `░` Prefer small, explainable tools over noisy ones.
-
----
 
 ### ▌ 关于 / About
 
