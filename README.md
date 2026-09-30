@@ -1,3 +1,5 @@
+![MATRIX typing banner](assets/typing-banner.svg)
+
 ```text
 ╔════════════════════════════════════════╗
 ║  ░ MATRIX://wajuejinajia · online ░    ║

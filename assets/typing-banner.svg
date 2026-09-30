@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Matrix typing banner for wajuejinajia">
+  <title>MATRIX://wajuejinajia · typing banner</title>
+  <defs>
+    <style><![CDATA[
+      .bg { fill: #0a0e0a; }
+      .frame {
+        fill: none;
+        stroke: #00ff41;
+        stroke-width: 1.5;
+        opacity: 0.55;
+      }
+      .glow {
+        fill: none;
+        stroke: #00ff41;
+        stroke-width: 6;
+        opacity: 0.08;
+      }
+      .label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 14px;
+        fill: #00ff41;
+        opacity: 0.7;
+        letter-spacing: 0.08em;
+      }
+      .prompt {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 28px;
+        fill: #00ff41;
+        font-weight: 600;
+      }
+      .dim {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 13px;
+        fill: #00ff41;
+        opacity: 0.35;
+        letter-spacing: 0.12em;
+      }
+      .line {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 28px;
+        fill: #00ff41;
+        font-weight: 600;
+      }
+      .cursor {
+        fill: #00ff41;
+      }
+      .scan {
+        fill: #00ff41;
+        opacity: 0.045;
+      }
+    ]]></style>
+
+    <!-- Typing reveal clips: 12s cycle, 3 lines -->
+    <clipPath id="clip1">
+      <rect x="70" y="90" width="0" height="50">
+        <animate attributeName="width"
+          values="0;0;320;320;0;0;0;0;0;0;0"
+          keyTimes="0;0.02;0.18;0.27;0.30;0.31;0.5;0.7;0.9;0.95;1"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip2">
+      <rect x="70" y="90" width="0" height="50">
+        <animate attributeName="width"
+          values="0;0;0;0;0;0;520;520;0;0;0"
+          keyTimes="0;0.02;0.18;0.27;0.30;0.32;0.48;0.57;0.60;0.61;1"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="linear"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip3">
+      <rect x="70" y="90" width="0" height="50">
+        <animate attributeName="width"
+          values="0;0;0;0;0;0;0;0;0;380;380;0;0"
+          keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.55;0.58;0.60;0.62;0.78;0.88;1"
+          dur="12s"
+          repeatCount="indefinite"
+          calcMode="linear"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" width="900" height="220" rx="10" ry="10"/>
+
+  <!-- subtle grid dots -->
+  <g opacity="0.12" fill="#00ff41">
+    <circle cx="40" cy="30" r="1"/><circle cx="80" cy="30" r="1"/><circle cx="120" cy="30" r="1"/>
+    <circle cx="160" cy="30" r="1"/><circle cx="200" cy="30" r="1"/><circle cx="240" cy="30" r="1"/>
+    <circle cx="280" cy="30" r="1"/><circle cx="320" cy="30" r="1"/><circle cx="360" cy="30" r="1"/>
+    <circle cx="40" cy="190" r="1"/><circle cx="80" cy="190" r="1"/><circle cx="120" cy="190" r="1"/>
+    <circle cx="160" cy="190" r="1"/><circle cx="200" cy="190" r="1"/><circle cx="240" cy="190" r="1"/>
+    <circle cx="780" cy="30" r="1"/><circle cx="820" cy="30" r="1"/><circle cx="860" cy="30" r="1"/>
+    <circle cx="780" cy="190" r="1"/><circle cx="820" cy="190" r="1"/><circle cx="860" cy="190" r="1"/>
+  </g>
+
+  <!-- scanline -->
+  <rect class="scan" x="18" y="18" width="864" height="24">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0; 0 160; 0 0" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- outer glow + frame -->
+  <rect class="glow" x="16" y="16" width="868" height="188" rx="8" ry="8"/>
+  <rect class="frame" x="16" y="16" width="868" height="188" rx="8" ry="8"/>
+
+  <!-- corner brackets -->
+  <g stroke="#00ff41" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M28 44 V28 H44"/>
+    <path d="M872 44 V28 H856"/>
+    <path d="M28 176 V192 H44"/>
+    <path d="M872 176 V192 H856"/>
+  </g>
+
+  <!-- header -->
+  <text class="label" x="48" y="52">MATRIX://wajuejinajia · online</text>
+  <text class="dim" x="700" y="52">v1.0 ░</text>
+
+  <!-- prompt prefix -->
+  <text class="prompt" x="48" y="122">&gt;</text>
+
+  <!-- cycling typed lines -->
+  <text class="line" x="78" y="122" clip-path="url(#clip1)">whoami → Liam</text>
+  <text class="line" x="78" y="122" clip-path="url(#clip2)">Agent Skills · macOS · TypeScript</text>
+  <text class="line" x="78" y="122" clip-path="url(#clip3)">repo-showcase online</text>
+
+  <!-- blinking cursor that tracks typing end -->
+  <rect class="cursor" x="78" y="100" width="14" height="28">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.49;0.5;1" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="x"
+      values="78;398;398;78;78;598;598;78;78;458;458;78;78"
+      keyTimes="0;0.18;0.27;0.30;0.32;0.48;0.57;0.60;0.62;0.78;0.88;0.90;1"
+      dur="12s"
+      repeatCount="indefinite"
+      calcMode="linear"/>
+  </rect>
+
+  <!-- footer status -->
+  <text class="dim" x="48" y="178">█ connection established · build · ship · refine · repeat</text>
+</svg>
